@@ -61,7 +61,12 @@ class Contact extends StatelessWidget {
                           color: Colors.deepOrange,
                           fontWeight: FontWeight.bold,
                         ),),
-                        const SizedBox(height: 150,),
+                        const SizedBox(height: 10,),
+                        const Text ("allar.nicolaudo@anahuac.mx", style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.deepOrange,
+                          fontWeight: FontWeight.bold,
+                        ),),
                       ],
                     ),
                   ],

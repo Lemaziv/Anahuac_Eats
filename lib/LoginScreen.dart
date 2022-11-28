@@ -22,8 +22,17 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           children: <Widget>[
             Container(
                 alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
                 margin: const EdgeInsets.only(top: 30),
+                height: 100,
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage("https://i.ibb.co/RhSQLNF/Anahuac-Eats.png")
+                    )
+                )),
+            Container(
+                alignment: Alignment.center,
+                padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(top: 20),
                 child: const Text(
                   'Anáhuac Eats',
                   style: TextStyle(
@@ -34,7 +43,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
-                margin: const EdgeInsets.only(bottom: 50),
+                margin: const EdgeInsets.only(bottom: 30),
                 child: const Text(
                   'Sign in',
                   style: TextStyle(fontSize: 18),
