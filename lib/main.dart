@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: Scaffold(
-          appBar: AppBar(title: const Text(_title)),
-          body: const MyStatefulWidget(),
+      home: const Scaffold(
+          body: MyStatefulWidget(),
       )
     );
   }

@@ -1,3 +1,4 @@
+import 'package:anahuac_eats/Menu.dart';
 import 'package:flutter/material.dart';
 import 'package:anahuac_eats/Register.dart';
 import 'package:anahuac_eats/ForgotPassword.dart';
@@ -22,6 +23,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(top: 30),
                 child: const Text(
                   'Anáhuac Eats',
                   style: TextStyle(
@@ -32,6 +34,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(bottom: 50),
                 child: const Text(
                   'Sign in',
                   style: TextStyle(fontSize: 18),
@@ -63,8 +66,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 child: ElevatedButton(
                   child: const Text('Login'),
                   onPressed: () {
-                    print(nameController.text);
-                    print(passwordController.text);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MyMenu()),
+                    );
                   },
                 )
             ),
